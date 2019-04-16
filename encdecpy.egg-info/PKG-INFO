@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: encdecpy
+Version: 0.0.1
+Summary: Python Package to encode and decode strings using ciphers.
+Home-page: https://github.com/IronVenom/encdecpy
+Author: Atharva Kulkarni
+Author-email: amk11@iitbbs.ac.in
+License: UNKNOWN
+Description: # encdecpy
+        Python package to encode and decode strings using ciphers.
+        
+Keywords: encode decode cryptography ciphers encryption decryption
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
