@@ -17,6 +17,11 @@ Do
 
 ```
 from encdecpy import base64
+
+string = 'lorem ipsum ...'
+
+print(base64(string).encode())
+print(base64(string).decode())
 ```
 
 * base64(string).encode() : To encode a string.
@@ -28,6 +33,11 @@ Do
 
 ```
 from encdecpy import atbash
+
+string = 'lorem ipsum ...'
+
+print(atbash(string).encode())
+print(atbash(string).decode())
 ```
 
 * atbash(string).encode() : To encode a string.
@@ -39,6 +49,11 @@ Do
 
 ```
 from encdecpy import rot13
+
+string = 'lorem ipsum ...'
+
+print(rot13(string).encode())
+print(rot13(string).decode())
 ```
 
 * rot13(string).encode() : To encode a string.
@@ -50,6 +65,13 @@ Do
 
 ```
 from encdecpy import caesar
+
+string = 'lorem ipsum ...'
+
+key = 8
+
+print(caesar(string,key).encode())
+print(caesar(string,key).decode())
 ```
 
 * caesar(string,key).encode() : To encode a string.
