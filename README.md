@@ -1,4 +1,4 @@
-https://img.shields.io/pypi/dm/encdecpy.svg https://img.shields.io/pypi/v/encdecpy.svg https://img.shields.io/pypi/l/encdecpy.svg
+![PyPI - Downloads](https://img.shields.io/pypi/dm/encdecpy.svg) ![PyPI - Version](https://img.shields.io/pypi/v/encdecpy.svg) ![PyPI - Version](https://img.shields.io/pypi/l/encdecpy.svg)      
 
 ## encdecpy
 Python package to encode and decode strings using ciphers.
