@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="encdecpy",
-    version="0.1",
+    version="0.2",
     author="Atharva Kulkarni",
     author_email="amk11@iitbbs.ac.in",
     description="Python Package to encode and decode strings using ciphers.",

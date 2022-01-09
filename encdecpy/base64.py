@@ -9,14 +9,10 @@ decode_dict = {a:b for b,a in encode_dict.items()}
 
 class base64:
 
-	def __init__(self,string):
-
-		self.string = string
-
-	def encode(self):
+	def encode(string):
 
 		binstream = ''
-		for i in self.string:
+		for i in string:
 			binstream+='0'*(8-len(f"{ord(i):b}"))+f"{ord(i):b}"
 		extra = 0
 		if len(binstream)%3!=0:
@@ -34,13 +30,13 @@ class base64:
 			encoded_string+=encode_dict[int(i,2)]
 		return encoded_string+'='*extra
 
-	def decode(self):
+	def decode(string):
 
 		decode_stream = ''
 		newstring = ''
-		if self.string[-1] == '=':
-			if self.string[-2] == '=':
-				newstring = self.string[:-2]
+		if string[-1] == '=':
+			if string[-2] == '=':
+				newstring = string[:-2]
 				for i in newstring:
 					decode_stream+='0'*(6-len(f"{decode_dict[i]:b}"))+f"{decode_dict[i]:b}"
 				decode_l = []
@@ -49,7 +45,7 @@ class base64:
 					decode_l.append(chr(int(decode_stream[i*8:8*(i+1):1],2)))
 				return ''.join(decode_l[2:])
 			else:
-				newstring = self.string[:-1]
+				newstring = string[:-1]
 				for i in newstring:
 					decode_stream+='0'*(6-len(f"{decode_dict[i]:b}"))+f"{decode_dict[i]:b}"
 				decode_l = []
@@ -58,7 +54,7 @@ class base64:
 					decode_l.append(chr(int(decode_stream[i*8:8*(i+1):1],2)))
 				return ''.join(decode_l[4:])
 		else:
-			for i in self.string:
+			for i in string:
 				decode_stream+='0'*(6-len(f"{decode_dict[i]:b}"))+f"{decode_dict[i]:b}"
 			decode_l = []
 			for i in range(0,int(len(decode_stream)/8)):

@@ -1,13 +1,9 @@
 class rot13:
 
-	def __init__(self,string):
-
-		self.string = string
-
-	def encode(self):
+	def encode(string):
 
 		encoded_string = ''
-		for i in self.string:
+		for i in string:
 			if ord(i)>=ord('A') and ord(i)<=ord('Z'):
 				if ord(i)+13>ord('Z'):
 					encoded_string+=chr(ord('A')+ord(i)+13-ord('Z')-1)
@@ -22,10 +18,10 @@ class rot13:
 				encoded_string+=i
 		return encoded_string
 
-	def decode(self):
+	def decode(string):
 
 		decoded_string = ''
-		for i in self.string:
+		for i in string:
 			if ord(i)>=ord('A') and ord(i)<=ord('Z'):
 				if ord(i)-13<ord('A'):
 					decoded_string+=chr(ord('Z')-13+ord(i)-ord('A')+1)
