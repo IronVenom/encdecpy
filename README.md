@@ -13,20 +13,20 @@ $ pip install encdecpy
 
 The package provides the following ciphers to encode and decode strings - 
 
-1. [Affine Cipher](###-affine-cipher)
-2. [Atbash Cipher](###-atbash-cipher)
-3. [Autokey Cipher](###-autokey-cipher)
-4. [Baconian Cipher](###-baconian-cipher)
-5. [Base64 Cipher](###-base64-cipher)
-6. [Beaufort Cipher](###-beaufort-cipher)
-7. [Caesar Cipher](###-caesar-cipher)
-8. [Columnar Transposition Cipher](###-columnar-transposition-cipher)
-9. [Polybius Square Cipher](###-polybius-square-cipher)
-10. [Rail Fence Cipher](###-rail-fence-cipher)
-11. [ROT13 Cipher](###-rot13-cipher)
-12. [Running Key Cipher](###-running-key-cipher)
-13. [Simple Substitution Cipher](###-simple-substitution-cipher)
-14. [Vignere Cipher](###-vignere-cipher)
+1. [Affine Cipher](###affine-cipher)
+2. [Atbash Cipher](###atbash-cipher)
+3. [Autokey Cipher](###autokey-cipher)
+4. [Baconian Cipher](###baconian-cipher)
+5. [Base64 Cipher](###base64-cipher)
+6. [Beaufort Cipher](###beaufort-cipher)
+7. [Caesar Cipher](###caesar-cipher)
+8. [Columnar Transposition Cipher](###columnar-transposition-cipher)
+9. [Polybius Square Cipher](###polybius-square-cipher)
+10. [Rail Fence Cipher](###rail-fence-cipher)
+11. [ROT13 Cipher](###rot13-cipher)
+12. [Running Key Cipher](###running-key-cipher)
+13. [Simple Substitution Cipher](###simple-substitution-cipher)
+14. [Vignere Cipher](###vignere-cipher)
 
 ### Affine Cipher
 ```python
